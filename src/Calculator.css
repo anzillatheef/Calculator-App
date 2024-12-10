@@ -1,0 +1,73 @@
+body {
+  background: #d2ccc5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.Calculator {
+  width: 320px; /* Width adjusted to fit buttons properly */
+  height: 90vh; /* Set height to take up most of the viewport */
+  max-height: 90vh; /* Ensure the calculator doesn't grow beyond this height */
+  position: relative;
+  margin: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: #f3f3f3;
+  padding: 20px;
+  border-radius: 10px;
+  overflow-y: auto; /* Enable vertical scrolling when content overflows */
+}
+
+.screen-row {
+  margin-bottom: 20px;
+}
+
+.calculator-screen {
+  width: 100%;
+  height: 40px;
+  background: #851f1f;
+  border: 2px solid black;
+  color: white;
+  padding: 10px;
+  text-align: right; /* Align text to the right */
+  font-size: 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.displayed-image {
+  width: 100%;
+  max-width: 200px; /* Restrict width to maintain aspect ratio */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four buttons per row */
+  gap: 10px; /* Add space between buttons */
+}
+
+.ButtonStyle {
+  background-color: #0997f5;
+  border: none;
+  color: white;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
